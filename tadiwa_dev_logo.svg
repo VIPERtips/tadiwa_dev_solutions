@@ -1,0 +1,97 @@
+<!-- VERSION 1: ICON ONLY -->
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 40px;">
+  <defs>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00FFFF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#32CD32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00FFFF;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:0.3" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="55" fill="url(#bgGradient)" stroke="url(#iconGradient)" stroke-width="2"/>
+  
+  <!-- Code brackets symbol -->
+  <g transform="translate(25, 25)">
+    <!-- Left bracket -->
+    <path d="M25 20 L10 20 L10 70 L25 70" stroke="url(#iconGradient)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right bracket -->
+    <path d="M45 20 L60 20 L60 70 L45 70" stroke="url(#iconGradient)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Code lines -->
+    <line x1="20" y1="32" x2="50" y2="32" stroke="#32CD32" stroke-width="3" stroke-linecap="round"/>
+    <line x1="20" y1="45" x2="40" y2="45" stroke="#00FFFF" stroke-width="3" stroke-linecap="round"/>
+    <line x1="20" y1="58" x2="45" y2="58" stroke="#32CD32" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Letter T in center -->
+  <text x="60" y="90" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="url(#iconGradient)" text-anchor="middle">
+    T
+  </text>
+</svg>
+
+<!-- VERSION 2: ICON + WORDMARK -->
+<svg viewBox="0 0 350 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iconGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00FFFF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#32CD32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00FFFF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="bgGradient2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:0.2" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Icon section -->
+  <g>
+    <!-- Background circle -->
+    <circle cx="40" cy="60" r="35" fill="url(#bgGradient2)" stroke="url(#iconGradient2)" stroke-width="1.5"/>
+    
+    <!-- Code brackets symbol -->
+    <g transform="translate(15, 35)">
+      <!-- Left bracket -->
+      <path d="M20 15 L10 15 L10 50 L20 50" stroke="url(#iconGradient2)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Right bracket -->
+      <path d="M30 15 L40 15 L40 50 L30 50" stroke="url(#iconGradient2)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Code lines -->
+      <line x1="16" y1="23" x2="34" y2="23" stroke="#32CD32" stroke-width="2" stroke-linecap="round"/>
+      <line x1="16" y1="32" x2="28" y2="32" stroke="#00FFFF" stroke-width="2" stroke-linecap="round"/>
+      <line x1="16" y1="41" x2="32" y2="41" stroke="#32CD32" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Letter T in center -->
+    <text x="40" y="75" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="url(#iconGradient2)" text-anchor="middle">
+      T
+    </text>
+  </g>
+  
+  <!-- Wordmark section -->
+  <g transform="translate(90, 0)">
+    <!-- Main text "TADIWA'S" -->
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="url(#textGradient2)" letter-spacing="1px">
+      TADIWA'S
+    </text>
+    
+    <!-- Secondary text "DEV SOLUTIONS" -->
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#1e3a8a" letter-spacing="1.5px">
+      DEV SOLUTIONS
+    </text>
+    
+    <!-- Tagline -->
+    <text x="0" y="85" font-family="Arial, sans-serif" font-size="8" fill="#64748b" letter-spacing="0.5px">
+      FAST • AFFORDABLE • RELIABLE
+    </text>
+  </g>
+  
+  <!-- Connecting element -->
+  <line x1="80" y1="60" x2="88" y2="60" stroke="url(#iconGradient2)" stroke-width="2"/>
+</svg>

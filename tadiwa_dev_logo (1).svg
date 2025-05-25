@@ -1,0 +1,54 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="codeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00FFFF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#32CD32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00FFFF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle for icon -->
+  <circle cx="35" cy="60" r="30" fill="#1e3a8a" opacity="0.1"/>
+  
+  <!-- Code brackets symbol -->
+  <g transform="translate(15, 35)">
+    <!-- Left bracket -->
+    <path d="M15 10 L5 10 L5 40 L15 40" stroke="url(#codeGradient)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right bracket -->
+    <path d="M25 10 L35 10 L35 40 L25 40" stroke="url(#codeGradient)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Code lines -->
+    <line x1="12" y1="18" x2="28" y2="18" stroke="#32CD32" stroke-width="2" stroke-linecap="round"/>
+    <line x1="12" y1="25" x2="22" y2="25" stroke="#00FFFF" stroke-width="2" stroke-linecap="round"/>
+    <line x1="12" y1="32" x2="25" y2="32" stroke="#32CD32" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Main text "TADIWA'S" -->
+  <text x="85" y="45" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="url(#textGradient)" letter-spacing="1px">
+    TADIWA'S
+  </text>
+  
+  <!-- Accent line -->
+  <line x1="85" y1="50" x2="220" y2="50" stroke="url(#codeGradient)" stroke-width="2"/>
+  
+  <!-- Secondary text "DEV SOLUTIONS" -->
+  <text x="85" y="75" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#1e3a8a" letter-spacing="2px">
+    DEV SOLUTIONS
+  </text>
+  
+  <!-- Tagline -->
+  <text x="85" y="95" font-family="Arial, sans-serif" font-size="10" fill="#64748b" letter-spacing="1px">
+    FAST • AFFORDABLE • RELIABLE
+  </text>
+  
+  <!-- Subtle tech elements -->
+  <g opacity="0.3">
+    <circle cx="350" cy="25" r="2" fill="#00FFFF"/>
+    <circle cx="360" cy="30" r="1.5" fill="#32CD32"/>
+    <circle cx="370" cy="20" r="1" fill="#00FFFF"/>
+    <polygon points="340,15 345,20 340,25 335,20" fill="#32CD32"/>
+  </g>
+</svg>
