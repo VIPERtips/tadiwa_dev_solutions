@@ -112,6 +112,87 @@
     .process-step:hover {
       transform: scale(1.1);
     }
+    /* Mobile Responsiveness - Below 768px */
+@media (max-width: 768px) {
+  /* General Layout Adjustments */
+  .flex-col, .flex-col-reverse {
+    flex-direction: column;
+  }
+  
+  /* Hero Section */
+  .hero-gradient {
+    padding-top: 100px; /* Account for fixed nav */
+    text-align: center;
+  }
+  
+  /* Process Steps */
+  #process .grid-cols-1 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .process-step {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Services/Pricing Cards */
+  #services .grid-cols-1 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  /* Navigation */
+  nav {
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Text Sizing */
+  h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  /* Buttons */
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    padding: 0.75rem;
+  }
+  
+  /* Code Preview Box */
+  .relative.bg-white {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Testimonials (if added later) */
+  .testimonial-slide {
+    padding: 1rem;
+  }
+}
+
+/* Smaller Phones - Below 480px */
+@media (max-width: 480px) {
+  /* Even smaller text */
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  /* Tighten up spacing */
+  section {
+    padding: 3rem 1rem;
+  }
+  
+  /* Form elements */
+  input, textarea {
+    width: 100%;
+  }
+        }
   </style>
 </head>
 
