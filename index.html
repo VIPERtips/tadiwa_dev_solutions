@@ -32,48 +32,56 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
- <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="/style.css">
 </head>
 
 <body class="bg-white">
     <!-- Navigation -->
     <nav class="fixed w-full bg-white shadow-sm z-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <a href="#" class="text-xl font-bold text-[#1e293b]">Tadiwa<span class="text-[#22d3ee]">.</span></a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#about" class="text-[#334155] hover:text-[#22d3ee] transition">About</a>
-                    <a href="#services" class="text-[#334155] hover:text-[#22d3ee] transition">Services</a>
-                    <a href="#process" class="text-[#334155] hover:text-[#22d3ee] transition">Process</a>
-                    <a href="#testimonials" class="text-[#334155] hover:text-[#22d3ee] transition">Testimonials</a>
-                    <a href="#contact" class="text-[#334155] hover:text-[#22d3ee] transition">Contact</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button id="menu-btn" class="text-[#1e293b]">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#about" class="block px-3 py-2 text-[#334155] hover:text-[#22d3ee]">About</a>
-                <a href="#services" class="block px-3 py-2 text-[#334155] hover:text-[#22d3ee]">Services</a>
-                <a href="#process" class="block px-3 py-2 text-[#334155] hover:text-[#22d3ee]">Process</a>
-                <a href="#testimonials" class="block px-3 py-2 text-[#334155] hover:text-[#22d3ee]">Testimonials</a>
-                <a href="#contact" class="block px-3 py-2 text-[#334155] hover:text-[#22d3ee]">Contact</a>
-            </div>
-        </div>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex items-center">
+        <a href="#hero" class="text-xl font-bold text-[#1e293b]">Tadiwa<span class="text-[#22d3ee]">.</span></a>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#about" class="text-[#334155] hover:text-[#22d3ee] transition">About</a>
+        <a href="#services" class="text-[#334155] hover:text-[#22d3ee] transition">Services</a>
+        <a href="#process" class="text-[#334155] hover:text-[#22d3ee] transition">Process</a>
+        <a href="#testimonials" class="text-[#334155] hover:text-[#22d3ee] transition">Testimonials</a>
+        <a href="#contact" class="text-[#334155] hover:text-[#22d3ee] transition">Contact</a>
+      </div>
+
+      <div class="md:hidden flex items-center">
+        <button id="menu-btn" class="text-[#1e293b]">
+          <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor"
+               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg id="close-icon" class="hidden w-6 h-6" fill="none" stroke="currentColor"
+               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      <a href="#about" class="block px-3 py-2 text-[#334155] hover:text-[#22d3ee]">About</a>
+      <a href="#services" class="block px-3 py-2 text-[#334155] hover:text-[#22d3ee]">Services</a>
+      <a href="#process" class="block px-3 py-2 text-[#334155] hover:text-[#22d3ee]">Process</a>
+      <a href="#testimonials" class="block px-3 py-2 text-[#334155] hover:text-[#22d3ee]">Testimonials</a>
+      <a href="#contact" class="block px-3 py-2 text-[#334155] hover:text-[#22d3ee]">Contact</a>
+    </div>
+  </div>
     </nav>
 
 <!-- Hero Section -->
-<section class="hero-gradient min-h-screen flex items-center justify-center px-4 py-16">
+<section id="hero" class="hero-gradient min-h-screen flex items-center justify-center px-4 py-16">
   <div class="max-w-6xl w-full flex flex-col md:flex-row items-center justify-center gap-12">
     
     <!-- Text Content -->
@@ -673,68 +681,74 @@
 
    <!-- Footer -->
 <footer class="bg-[#1e293b] text-white py-12">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-                <h3 class="text-xl font-bold mb-4">Tadiwa Dev Solutions</h3>
-                <p class="text-[#cbd5e1]">
-                    Crafting clean, effective portfolio websites for students and freelancers.
-                </p>
-            </div>
-            
-            <div>
-                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-                <ul class="space-y-2">
-                    <li><a href="#about" class="text-[#cbd5e1] hover:text-[#22d3ee] transition">About</a></li>
-                    <li><a href="#services" class="text-[#cbd5e1] hover:text-[#22d3ee] transition">Services</a></li>
-                    <li><a href="#process" class="text-[#cbd5e1] hover:text-[#22d3ee] transition">Process</a></li>
-                    <li><a href="#testimonials" class="text-[#cbd5e1] hover:text-[#22d3ee] transition">Testimonials</a></li>
-                    <li><a href="#contact" class="text-[#cbd5e1] hover:text-[#22d3ee] transition">Contact</a></li>
-                </ul>
-            </div>
-            
-            <div>
-                <h3 class="text-xl font-bold mb-4">Connect With Me</h3>
-                <div class="flex space-x-4">
-                    
-                    <a href="https://linkedin.com/in/tadiwa-chipungu" class="w-10 h-10 bg-[#334155] rounded-full flex items-center justify-center hover:bg-[#22d3ee] transition">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/VIPERtips" class="w-10 h-10 bg-[#334155] rounded-full flex items-center justify-center hover:bg-[#22d3ee] transition">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.instagram.com/young_tips_blessed" class="w-10 h-10 bg-[#334155] rounded-full flex items-center justify-center hover:bg-[#22d3ee] transition">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4">Tadiwa Dev Solutions</h3>
+        <p class="text-[#cbd5e1]">
+          Crafting clean, effective portfolio websites for students and freelancers.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+       <ul class="flex flex-wrap gap-2 sm:flex-col sm:gap-2">
+  <li><a href="#about" class="text-[#cbd5e1] hover:text-[#22d3ee] transition">About</a></li>
+  <span class="inline sm:hidden">|</span>
+  <li><a href="#services" class="text-[#cbd5e1] hover:text-[#22d3ee] transition">Services</a></li>
+  <span class="inline sm:hidden">|</span>
+  <li><a href="#process" class="text-[#cbd5e1] hover:text-[#22d3ee] transition">Process</a></li>
+  <span class="inline sm:hidden">|</span>
+  <li><a href="#testimonials" class="text-[#cbd5e1] hover:text-[#22d3ee] transition">Testimonials</a></li>
+  <span class="inline sm:hidden">|</span>
+  <li><a href="#contact" class="text-[#cbd5e1] hover:text-[#22d3ee] transition">Contact</a></li>
+</ul>
+
+
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-4">Connect With Me</h3>
+        <div class="flex space-x-4 gap-5">
+          <a href="https://linkedin.com/in/tadiwa-chipungu" class="w-10 h-10 bg-[#334155] rounded-full flex items-center justify-center hover:bg-[#22d3ee] transition">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/VIPERtips" class="w-10 h-10 bg-[#334155] rounded-full flex items-center justify-center hover:bg-[#22d3ee] transition">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/young_tips_blessed" class="w-10 h-10 bg-[#334155] rounded-full flex items-center justify-center hover:bg-[#22d3ee] transition">
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
-        
-        <div class="border-t border-[#334155] mt-12 pt-8 text-center text-[#cbd5e1]">
-            <p>&copy; <span id="currentDateTime"></span> Tadiwa Dev Solutions. All rights reserved.</p>
-        </div>
+      </div>
     </div>
 
-    <script>
-        function updateDateTime() {
-            const now = new Date();
-            const options = {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit',
-                second: '2-digit',
-                hour12: false,
-                timeZoneName: 'short'
-            };
-            const formatted = now.toLocaleString(undefined, options);
-            document.getElementById('currentDateTime').textContent = formatted;
-        }
-        updateDateTime();
-        setInterval(updateDateTime, 1000);
-    </script>
+    <div class="border-t border-[#334155] mt-12 pt-8 text-center text-[#cbd5e1]">
+      <p>&copy; <span id="currentDateTime"></span> Tadiwa Dev Solutions. All rights reserved.</p>
+    </div>
+  </div>
+
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      const options = {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false,
+        timeZoneName: 'short'
+      };
+      const formatted = now.toLocaleString(undefined, options);
+      document.getElementById('currentDateTime').textContent = formatted;
+    }
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  </script>
 </footer>
+
 
 
     <!-- WhatsApp Floating Button -->
@@ -743,13 +757,42 @@
     </a>
 
     <script>
-        // Mobile menu toggle
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+      const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      });
+    });
+
+    //force scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').slice(1);
+    const target = document.getElementById(targetId);
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
         
        
         
