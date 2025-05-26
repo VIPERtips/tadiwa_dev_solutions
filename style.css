@@ -189,6 +189,82 @@
 }
 
 
+@media (max-width: 480px) {
+  #process .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  #process h2 {
+    font-size: 1.75rem !important;
+  }
+
+  #process p {
+    font-size: 1rem !important;
+    max-width: 100% !important;
+  }
+
+  #process .process-step {
+    width: 50px;
+    height: 50px;
+  }
+
+  #process .process-step span {
+    font-size: 1.25rem !important;
+  }
+
+  #process h3 {
+    font-size: 1.125rem !important;
+  }
+}
+
+
+@media (max-width: 480px) {
+  #order form .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  #order label {
+    font-size: 0.9rem !important;
+  }
+
+  #order input,
+  #order select,
+  #order textarea,
+  #order button {
+    font-size: 1rem !important;
+    width: 100% !important;
+  }
+
+  #order button {
+    padding: 12px 0 !important;
+  }
+
+  #order .max-w-3xl.mx-auto.mt-12 .flex {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 12px !important;
+  }
+
+  #order .max-w-3xl.mx-auto.mt-12 .flex > div {
+    flex: 1 1 100px !important;
+    max-width: 120px !important;
+  }
+
+  #order h2 {
+    font-size: 1.75rem !important;
+  }
+
+  #order p {
+    font-size: 1rem !important;
+    max-width: 100% !important;
+  }
+
+  #order h3 {
+    font-size: 1.25rem !important;
+  }
+}
+
+
 
   nav {
     min-width: 0;
