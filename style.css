@@ -12,6 +12,7 @@
       font-family: 'Inter', sans-serif;
       color: var(--slate);
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
 
     h1, h2, h3, h4 {
